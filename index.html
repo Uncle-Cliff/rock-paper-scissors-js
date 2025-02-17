@@ -22,7 +22,7 @@
         result='Tie!'
     }else if(computerMove ==='Paper!'){
         result='You Lose!'
-    }else{
+    }else if (computerMove==='Scissors!'){
         result='You win!!'
     }
     console.log(result);
@@ -30,23 +30,45 @@
     
     ">Rock</button>
     <button  onclick= "const randomNumber2=Math.random()
+    let computerMove2='';
     if(randomNumber2>= 0 && randomNumber2 <= 1/3){
-        console.log('Rock')
+        computerMove2='Rock!'
     }else if( randomNumber2 > 1/3 && randomNumber2 <= 2/3){
-        console.log('Paper');
+        computerMove2='Paper!';
     }else{
-        console.log('Scissors!')
+        computerMove2='Scissors!'
     }
+    let result2='';
+    if(computerMove2==='Rock!'){
+        result2='You win!'
+    }else if(computerMove2==='Paper!'){
+        result2='tie!'
+
+    }else if (computerMove2==='Scissors!'){
+        result2='You lose'
+    }
+    console.log(result2);
+    alert(` You picked Paper. Computer picked ${computerMove2}.${result2}`)
     
     ">Paper</button>
     <button onclick= "const randomNumber3=Math.random()
+    let computerMove3='';
     if(randomNumber3>= 0 && randomNumber3 <= 1/3){
-        console.log('Rock')
+        computerMove3='Rock!';
     }else if( randomNumber3> 1/3 && randomNumber3 <= 2/3){
-        console.log('Paper');
+        computerMove3='Paper!';
     }else{
-        console.log('Scissors!')
+        computerMove3='Scissors!'
     }
+    result3='';
+    if(computerMove3==='Rock!'){
+        result3='You Lose!'
+    }else if(computerMove3==='Paper!'){
+        result3='You win!';
+    }else{
+        result3='Tie!'
+    }
+    alert(`You picked Scissors. Computer picked ${computerMove3}. ${result3}`);
     
     ">Scissors</button>
     
